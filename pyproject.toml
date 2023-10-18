@@ -11,6 +11,7 @@ fastai = "^2.7.13"
 torch = "1.13.1"
 gradio = "^3.49.0"
 timm = "^0.9.7"
+toml = "^0.10.2"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"
