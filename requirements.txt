@@ -1,0 +1,4 @@
+fastai
+scikit-image
+gradio
+torch==1.13.1
