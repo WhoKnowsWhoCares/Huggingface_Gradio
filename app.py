@@ -12,11 +12,12 @@ repo_id = "asFrants/photo_enhancement"
 def is_cat(x): return x[0].isupper() 
 
 # %% app.ipynb 5
-learn = load_learner('model.pkl')
-# learn = from_pretrained_fastai(repo_id)
+# learn = load_learner('model.pkl')
+learn = from_pretrained_fastai(repo_id)
 
 # %% app.ipynb 8
-categories = ('Dog','Cat')
+# categories = ('Dog','Cat')
+categories = learn.dls.vocab
 def classify_image(img):
     pred, idx, probs = learn.predict(img)
     return dict(zip(categories, map(float,probs)))
