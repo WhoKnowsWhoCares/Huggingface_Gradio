@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "photo-enhancement"
+name = "cat-dog classification"
 version = "0.1.0"
-description = "Lets do our photos better"
+description = "Lets do our it"
 authors = ["alexander <as.frantsev@gmail.com>"]
 readme = "README.md"
 
